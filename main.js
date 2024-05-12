@@ -5,7 +5,7 @@ const numSplitToArray  = num.toString().split('');
 let sum = 1;
 
 for (let i = 0; i < numSplitToArray.length; i++) {
-    sum *= numSplitToArray[i];
+    sum *= +numSplitToArray[i];
 };
 
 console.log(sum);
