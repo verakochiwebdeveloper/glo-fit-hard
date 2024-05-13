@@ -1,17 +1,47 @@
-const num = 266219;
+let lang = "en";
+const WeekDayRu = [
+  "Понедельник",
+  "Вторник",
+  "Среда",
+  "Четверг",
+  "Пятница",
+  "Суббота",
+  "Воскресенье",
+];
+const WeekDayEn = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
 
-const numSplitToArray  = num.toString().split('');
+if (lang === "ru") {
+  console.log(WeekDayEn);
+} else {
+  console.log(WeekDayRu);
+}
 
-let sum = 1;
+switch ("ru") {
+  case "ru":
+    console.log(WeekDayRu);
+    break;
+  case "en":
+    console.log(WeekDayRu);
+    break;
 
-for (let i = 0; i < numSplitToArray.length; i++) {
-    sum *= +numSplitToArray[i];
-};
+  default:
+    console.log("ошибка");
+    
+}
 
-console.log(sum);
+// не понял я вариант це ни формулировку не суть решения готовым ответом пользоваться не хочу https://qna.habr.com/q/661729
 
-const  cubedResult = sum **3;
+const namePerson = 'АртемАлександр';
 
-console.log( cubedResult)
-
-console.log( cubedResult.toString().slice(0,2))
+const namePersonType = 
+namePerson === 'Артем' ? console.log('директор')
+:namePerson === 'Александр' ? console.log('преподаватель')
+:console.log('студент');
