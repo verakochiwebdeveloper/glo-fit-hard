@@ -18,13 +18,13 @@ const WeekDayEn = [
   "Sunday",
 ];
 
-if (lang === "ru") {
+if (lang === "en") {
   console.log(WeekDayEn);
-} else {
+} else if (lang === "ru")  {
   console.log(WeekDayRu);
 }
 
-switch ("ru") {
+switch (lang) {
   case "ru":
     console.log(WeekDayRu);
     break;
@@ -37,11 +37,21 @@ switch ("ru") {
     
 }
 
-// не понял я вариант це ни формулировку не суть решения готовым ответом пользоваться не хочу https://qna.habr.com/q/661729
+// сложная задача решение нашел но не моё, формулировка задачи очень сложная для понимания. Не поймешь где искать ответ
+
+let daysOfWeek = [
+  ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
+  ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+];
+
+let lang2 = 'en'; // или 'en'
+let langIndex = lang2 === 'ru' ? 0 : 1;
+
+console.log(daysOfWeek[langIndex]);
+
 
 const namePerson = 'АртемАлександр';
 
 const namePersonType = 
-namePerson === 'Артем' ? console.log('директор')
-:namePerson === 'Александр' ? console.log('преподаватель')
-:console.log('студент');
+(namePerson === "Артем") ? "директор" : (namePerson === "Александр") ? "преподаватель" : "студент";
+console.log(namePersonType)
