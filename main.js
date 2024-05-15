@@ -1,4 +1,4 @@
-let lang = "en";
+let lang = "ru";
 const WeekDayRu = [
   "Понедельник",
   "Вторник",
@@ -20,15 +20,15 @@ const WeekDayEn = [
 
 if (lang === "en") {
   console.log(WeekDayEn);
-} else if (lang === "ru")  {
+} else  {
   console.log(WeekDayRu);
 }
 
 switch (lang) {
-  case "ru":
+  case "en":
     console.log(WeekDayRu);
     break;
-  case "en":
+  case "ru":
     console.log(WeekDayRu);
     break;
 
@@ -37,20 +37,20 @@ switch (lang) {
     
 }
 
-// сложная задача решение нашел но не моё, формулировка задачи очень сложная для понимания. Не поймешь где искать ответ
+// Не понимаю я решение этой задачи
 
 let daysOfWeek = [
-  ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
-  ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+  [ 'ru','понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
+  ['en', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 ];
 
-let lang2 = 'en'; // или 'en'
-let langIndex = lang2 === 'ru' ? 0 : 1;
+
+let langIndex = lang === 'ru' ? 0 : 1;
 
 console.log(daysOfWeek[langIndex]);
 
 
-const namePerson = 'АртемАлександр';
+const namePerson = 'Артем';
 
 const namePersonType = 
 (namePerson === "Артем") ? "директор" : (namePerson === "Александр") ? "преподаватель" : "студент";
